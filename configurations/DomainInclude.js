@@ -8,4 +8,6 @@ domain.VerificationToken = require("../application/models/VerificationToken.js")
 domain.RegistrationToken = require("../application/models/RegistrationToken.js")
 domain.Role = require("../application/models/Role.js")
 domain.Action = require("../application/models/Action.js")
+domain.Songs = require("../application/models/Songs.js");
+
 module.exports = domain

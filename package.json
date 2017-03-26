@@ -6,10 +6,11 @@
     "start": "NODE_ENV=development nodemon app.js"
   },
   "dependencies": {
-    "async":"1.4.2",
+    "async": "1.4.2",
     "body-parser": "1.14.1",
     "compression": "1.6.0",
     "connect": "3.4.0",
+    "connect-multiparty": "^2.0.0",
     "cookie-parser": "1.4.0",
     "cookie-session": "1.2.0",
     "cors": "2.7.1",
@@ -26,14 +27,15 @@
     "mongoose-softdelete": "0.6.2",
     "mongoose-timestamp": "0.4.0",
     "mongoosemask": "0.0.6",
+    "mv": "^2.1.1",
     "node-promise": "0.5.12",
     "node-uuid": "1.4.3",
     "nodemailer": "1.5.0",
+    "nodemon": "1.7.1",
     "serve-favicon": "2.3.0",
     "serve-index": "1.7.2",
     "serve-static": "1.10.0",
     "vhost": "3.0.1",
-    "winston": "1.0.2",
-    "nodemon":"1.7.1"
+    "winston": "1.0.2"
   }
 }

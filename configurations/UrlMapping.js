@@ -3,6 +3,23 @@
 			views = app.views;
 
 		return {
+			"/api/v1/bhajan/user/get/songs_list/:skip/:limit": [{
+					 method: "GET",
+					 action: controllers.userController.getSongsList,
+					 views: {
+							 json: views.jsonView
+					 }
+			 }
+		 ],
+			"/api/v1/bhajan/user/upload/song": [{
+					 method: "POST",
+					 action: controllers.userController.uploadSong,
+					 middleware:[multipartMiddleware],
+					 views: {
+							 json: views.jsonView
+					 }
+			 }
+		 ],
 			"/api/v1/userapi/removeAction": [{
 								 method: "POST",
 								 action: controllers.roleManagement.removeAction,

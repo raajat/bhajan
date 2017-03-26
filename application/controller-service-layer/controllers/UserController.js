@@ -40,11 +40,21 @@ module.exports = function () {
 		this.services.userService.searchUser(firstName,lastName,callback);
 	}
 
+	var getSongsList = function (req, res, callback) {
+		this.services.userService.getSongsList(req.params, callback);
+	}
+
+	var uploadSong = function (req, res, callback) {
+		this.services.userService.uploadSong(req.body, req.files.file, callback);
+	}
+
 	return {
 		createUser: createUser,
 		getUser: getUser,
 		updateUser: updateUser,
 		searchUser: searchUser,
-		deleteUser: deleteUser
+		deleteUser: deleteUser,
+		getSongsList:getSongsList,
+		uploadSong:uploadSong
 	}
 };

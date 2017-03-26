@@ -8,7 +8,8 @@ global.configurationHolder = require('./configurations/DependencyInclude.js')
 global.app = module.exports = express();
 app.use(bodyParser());
 app.use(errorHandler());
-
+var multipart = require('connect-multiparty');
+global.multipartMiddleware = multipart();
 
 global.router = express.Router();
 app.use(express.static(__dirname + '/public'));

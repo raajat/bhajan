@@ -17,6 +17,7 @@ var configVariables = function () {
             port:3000,
             host: 'http://localhost:3000/',
             verificationUrl:'http://localhost:3000/verify/',
+            songUrl: 'http://localhost:8595/',
             awsAccessKeyId:'',
             awsSecretAccessKey:'',
             bucketname:'',
@@ -76,7 +77,7 @@ var configVariables = function () {
             emailFrom:'raajatkatiyar@gmail.com',
             emailPassword:'password',
             verificationEmailSubject:'Welcome To World of RK !'
-            
+
         }
 
         config.roles = roles
